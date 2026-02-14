@@ -1,0 +1,100 @@
+html {
+    font-size: large;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0 2em 0 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2em 10em 2em 10em;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-header {
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.flex-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1em;
+}
+
+ul {
+    list-style: none;
+    font-weight: bold;
+    display: inline-block;
+    background-color: blue;
+    padding-right: 5px;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+    font-weight: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(146, 100, 100);
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active{
+    color: aquamarine;
+}
+
+.flex-main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    background-color: blanchedalmond;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+table, tbody, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1em;
+}
+
+caption {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(197, 224, 248);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+tfoot {
+    text-align: center;
+}

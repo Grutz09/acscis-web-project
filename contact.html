@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name of Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- logo pic -->
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li>>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque hic facilis commodi sapiente nobis, nemo consequatur illum doloremque quo voluptatibus asperiores repellendus exercitationem minus autem unde ipsam saepe, quaerat porro.</p>
+
+        <div>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder=" your full name" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="your email" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="09XXXXXXXXX" required>
+            </p>
+
+            <p>
+                <label>Service:</label><br>
+
+                <input type="radio" name="service" id="dinein" value="Dine-in" required>
+                <label for="dinein">Dine-in</label><br>
+
+                <input type="radio" name="service" id="takeout" value="Takeout/Delivery">
+                <label for="takeout">Takeout / Delivery</label><br>
+
+                <input type="radio" name="service" id="event" value="EventsCatering">
+                <label for="event">Events & Catering</label>
+            </p>
+
+            <p>
+                <label for="message">Your Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+            </p>
+        </div>
+
+        <button type="submit">Send</button>
+    </main>
+
+        <p><a href="#">Back to top</a></p>
+
+    <hr>
+
+    <footer>
+        <p>Copyright &copy; Name of restaurant</p>
+    </footer>
+
+</body>
+</html>
