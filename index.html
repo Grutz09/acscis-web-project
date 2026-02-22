@@ -1,94 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of Restaurant</title>
-    <link rel="stylesheet" href="index.css">    
-</head>
-<body>
-    <header class="flex-header">
-        <!-- logo pic -->
-        <nav class="flex-nav">
-            <div id="logo"><a href="#">Restaurant</a></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <hr>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ACSciS Bistro</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo" />
+                <p>ACSciS Bistro</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn">VIEW MENU</button>
+        </header>
 
-    <main class="flex-main">
-
-        <div class="hero">
-            <h1>Welcome to [name of restaurant]</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque hic facilis commodi sapiente nobis, nemo consequatur illum doloremque quo voluptatibus asperiores repellendus exercitationem minus autem unde ipsam saepe, quaerat porro.</p>
-        </div>
-        
-
-        <!-- picture -->
-        <!--Section ba gamitin ko or div na lang?-->
-        <section id="about" class="about">
-            <!-- picture -->
-            <h2>About us</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptates incidunt amet magnam, excepturi eaque iste autem porro atque vel nobis odit praesentium id ipsa quidem quia. Id, quia velit.</p>
-        </section>
-
-        <hr>
-
-        <section id="services">
-            <table>
-                <caption>Restaurant Services</caption>
-
-                <thead>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                        <th>Availability</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th>Dine-in</th>
-                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi laboriosam reiciendis ea mollitia fugiat nam illum unde earum sint! Id beatae consectetur nisi recusandae deserunt placeat inventore nulla debitis quia.</td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <th>Takeout/Delivery</th>
-                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi laboriosam reiciendis ea mollitia fugiat nam illum unde earum sint! Id beatae consectetur nisi recusandae deserunt placeat inventore nulla debitis quia.</td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <th>Events & Catering</th>
-                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi laboriosam reiciendis ea mollitia fugiat nam illum unde earum sint! Id beatae consectetur nisi recusandae deserunt placeat inventore nulla debitis quia.</td>
-                        <td>By Rrequest</td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-                    <tr>
-                        <td colspan="3">For event bookings, please contact us at least 3 days in advance.</td>
-                    </tr>
-                </tfoot>
-
-            </table>
-        </section>
-
-        
-    </main>
-    
-    <hr>
-
-    <footer>
-        <p><a href="#" id="back">Back to top</a></p>
-        <p>Copyright &copy; Name of restaurant</p>
-    </footer>
-
-</body>
+        <main class="home">
+            <div class="center">
+                <h1 class="tagline">
+                    Where Cravings <br />
+                    Meet Their Perfect <br />
+                    Match
+                </h1>
+                <p>
+                    Discover tasty flavors and unforgettable dishes in a place
+                    <br />
+                    where every craving is satisfied with the <br />
+                    perfect bite, crafted just for you.
+                </p>
+                <a href="" class="book-btn">
+                    <button>BOOK YOUR TABLE</button>
+                </a>
+            </div>
+        </main>
+    </body>
 </html>

@@ -1,84 +1,70 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-    font-size: large;
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #FFFFFF;
-    color: #333333;
+  display: flex;
+  flex-direction: column;
+  font-family: "Gill Sans", sans-serif;
+  background-color: #10100f;
+  color: white;
+  min-height: 100vh;
 }
 
-/*  Links  */
-a {
-    text-decoration: none;
-    color: black;
+main {
+  flex: 1;
 }
 
-a:visited {
-    color: red;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4px 0;
+  gap: 4px;
 }
 
-a:hover {
-    color: #E55A2B;
+.logo > img {
+  width: 40px;
+  height: 40px;
 }
 
-a:active {
-    color: aquamarine;
-}
-
-/*  Header & Nav  */
-header {
-    display: flex;
-    flex-direction: column;
-    background-color: #333333;
-    padding: 10px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FF6B35;
-}
-
-nav, ul, li, a {
-    background-color: #FF6B35;
+.logo > p {
+  color: #ffe5bc;
 }
 
 ul {
-    list-style: none;
-    font-weight: bold;
-    display: inline-block;
-    padding-right: 5px;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
-li {
-    display: inline-block;
-    padding: 5px;
+ul li a {
+  text-decoration: none;
+  color: white;
 }
 
-#logo {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 1em;
-    background-color: #FF6B35;
+a:hover {
+  color: #ffe5bc;
 }
 
-/*  Footer  */
-footer {
-    background-color: #333333;
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 10px;
+.menu-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #ffe5bc;
+  cursor: pointer;
+  font-size: 12px;
 }
 
-#back {
-    background-color: #FF6B35;
+button {
+  font-family: "Gill Sans", sans-serif;
 }
