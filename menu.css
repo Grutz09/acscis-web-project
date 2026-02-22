@@ -1,50 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     margin: 2em;
-    padding: 0 1em 0 1em;
-    font-family:
-        "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    background-color: antiquewhite;
-    font-size: larger;
-    font-weight: bold;
-    padding: 10px;
-}
-
-nav,
-ul,
-li {
-    list-style: none;
-    display: inline-block;
-    justify-content: space-between;
-    text-align: right;
-    padding: 0 1em 0 1em;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    color: blue;
-}
-
-a:hover {
-    color: black;
-}
-
-a:active {
-    color: whitesmoke;
+    padding: 0 1em;
 }
 
 main {
@@ -61,6 +17,7 @@ main {
     padding-bottom: 1em;
 }
 
+/* --- Appetizers --- */
 .appetizers {
     display: flex;
     flex-direction: column;
@@ -84,6 +41,7 @@ main {
     gap: 10em;
 }
 
+/* --- Main Course --- */
 .main {
     display: flex;
     flex-direction: column;
@@ -107,6 +65,7 @@ main {
     padding-bottom: 15px;
 }
 
+/* --- Desserts --- */
 .desserts {
     display: flex;
     flex-direction: column;
@@ -126,6 +85,7 @@ main {
     object-fit: cover;
 }
 
+/* --- Beverages --- */
 .beverages {
     display: flex;
     flex-direction: column;
@@ -144,16 +104,23 @@ main {
     object-fit: cover;
 }
 
-#back-to-top,
-a {
-    font-size: 20px;
+/* --- Info Button --- */
+.info-btn {
+    margin-top: 8px;
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
 }
 
-footer {
-    font-size: 20px;
+.info-btn:hover {
+    background-color: #e55a2b;
 }
 
-/* --- Dialog Styles --- */
+/* --- Dialog --- */
 dialog {
     border: none;
     border-radius: 10px;
@@ -161,9 +128,6 @@ dialog {
     max-width: 350px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    font-family:
-        "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    margin: 0;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -196,20 +160,4 @@ dialog button:hover {
 
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.4);
-}
-
-/* --- Info Button Styles --- */
-.info-btn {
-    margin-top: 8px;
-    background-color: #ff6b35;
-    color: white;
-    border: none;
-    padding: 5px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9em;
-}
-
-.info-btn:hover {
-    background-color: #e55a2b;
 }
