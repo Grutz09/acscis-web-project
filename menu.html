@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACSciS Bistro</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="menu.css" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="images/logo.svg" alt="logo" />
+        <img src="images/logo.png" alt="logo" />
       </div>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
       <a href="menu.html" class="menu-btn">
@@ -40,7 +40,11 @@
             <p>$14.99</p>
           </div>
 
-          <button>View Description</button>
+          <button
+            onclick="showInfo('Grilled Beef','Grilled beef cooked over open flame for a smoky, rich flavor. Seasoned just right for a satisfying meal.')"
+          >
+            View Description
+          </button>
         </div>
         <div class="menu-item">
           <img src="images/sisig.jpg" alt="sisig" />
@@ -49,7 +53,11 @@
             <p>$8.99</p>
           </div>
 
-          <button>View Description</button>
+          <button
+            onclick="showInfo('Sizzling Sisig','Sizzling sisig made with finely chopped meat, seasoned to perfection and served on a hot plate.')"
+          >
+            View Description
+          </button>
         </div>
         <div class="menu-item">
           <img src="images/sushi.jpg" alt="sushi" />
@@ -58,32 +66,36 @@
             <p>$12.99</p>
           </div>
 
-          <button>View Description</button>
+          <button
+            onclick="showInfo('Uramaki Sushi','Uramaki sushi rolls with rice on the outside and flavorful fillings at the center.')"
+          >
+            View Description
+          </button>
         </div>
       </div>
     </main>
 
     <dialog id="infoDialog">
-      <h2 id="dialogTitle">Item Name</h2>
-      <p id="dialogDesc">Description goes here.</p>
+      <h2 id="dialogTitle">Recipe</h2>
+      <p id="dialogDesc">Description</p>
       <button onclick="closeInfo()">Close</button>
     </dialog>
 
     <script>
-      // Step 1: Get the dialog element from the page
+      // Get the dialog element from the page
       const dialog = document.getElementById("infoDialog");
 
-      // Step 2: This function runs when the user clicks "Description"
+      // This function runs when the user clicks "Description"
       function showInfo(itemName, itemDesc) {
-        // Step 3: Put the item name and description inside the dialog
+        // Put the item name and description inside the dialog
         document.getElementById("dialogTitle").textContent = itemName;
         document.getElementById("dialogDesc").textContent = itemDesc;
 
-        // Step 4: Open/show the dialog
+        // Show the dialog
         dialog.showModal();
       }
 
-      // Step 5: This function runs when the user clicks "Close"
+      // This function runs when the user clicks "Close"
       function closeInfo() {
         dialog.close();
       }

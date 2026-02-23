@@ -1,0 +1,79 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-header > p {
+    font-size: 24px;
+    color: #ffe5bc;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.about-header > h1 {
+    font-family: ui-sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.logo-about {
+    height: 120px;
+    width: 120px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 48px;
+    width: 500px;
+    padding: 24px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.open-hrs {
+    color: #ffe5bc;
+    font-size: 16px;
+}
+
+a.book-btn {
+    width: 160px;
+}
+
+.book-btn > button {
+    padding: 12px;
+    font-size: 14px;
+    color: #ffe5bc;
+    background: none;
+    border: 2px solid #ffe5bc;
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 60px;
+    padding: 12px 0;
+}
+
+.banner-item > h1 {
+    font-family: ui-sans-serif;
+    font-size: 56px;
+    color: #ffe5bc;
+}
