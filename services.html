@@ -1,292 +1,106 @@
-<section id="services">
-  <table>
-    <caption>
-      Restaurant Services
-    </caption>
-
-    <thead>
-      <tr>
-        <th>Service</th>
-        <th>Description</th>
-        <th>Availability</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <th>Dine-in</th>
-        <td>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-          laboriosam reiciendis ea mollitia fugiat nam illum unde earum sint! Id
-          beatae consectetur nisi recusandae deserunt placeat inventore nulla
-          debitis quia.
-        </td>
-        <td>Daily</td>
-      </tr>
-      <tr>
-        <th>Takeout/Delivery</th>
-        <td>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-          laboriosam reiciendis ea mollitia fugiat nam illum unde earum sint! Id
-          beatae consectetur nisi recusandae deserunt placeat inventore nulla
-          debitis quia.
-        </td>
-        <td>Daily</td>
-      </tr>
-      <tr>
-        <th>Events & Catering</th>
-        <td>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-          laboriosam reiciendis ea mollitia fugiat nam illum unde earum sint! Id
-          beatae consectetur nisi recusandae deserunt placeat inventore nulla
-          debitis quia.
-        </td>
-        <td>By Rrequest</td>
-      </tr>
-    </tbody>
-
-    <tfoot>
-      <tr>
-        <td colspan="3">
-          For event bookings, please contact us at least 3 days in advance.
-        </td>
-      </tr>
-    </tfoot>
-  </table>
-</section>
-
-<main class="menu">
-  <h1 id="menu-header">Restaurant Menu</h1>
-  <section class="appetizers">
-    <h2 id="appetize">Appetizer/Starters</h2>
-    <div class="breads">
-      <div class="br">
-        <img src="images/starters/caesar_salad.png" alt="garlic bread" />
-        <p>Garlic Bread</p>
-        <p>₱100.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Garlic Bread',
-                  'Toasted bread topped with garlic butter and herbs. Crispy on the outside, soft on the inside!',
-                )
-              "
-        >
-          Description
-        </button>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACSciS Bistro</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="services.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" />
       </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a href="menu.html" class="menu-btn">
+        <button>VIEW MENU</button>
+      </a>
+    </header>
 
-      <div class="br">
-        <img src="images/starters/spring-rolls.jfif" alt="spring rolls" />
-        <p>Spring Rolls</p>
-        <p>₱120.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Spring Rolls',
-                  'Crispy golden rolls filled with vegetables and served with a sweet chili dipping sauce.',
-                )
-              "
-        >
-          Description
-        </button>
-      </div>
+    <main class="services">
+      <h1>Our Services</h1>
+      <section id="services">
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Description</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
 
-      <div class="br">
-        <img
-          src="/images/starters/caesar_salad.png"
-          alt="caesar salad"
-          loading="eager"
-        />
-        <p>Caesar Salad</p>
-        <p>₱150.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Caesar Salad',
-                  'Fresh romaine lettuce with Caesar dressing, croutons, and a sprinkle of parmesan cheese.',
-                )
-              "
-        >
-          Description
-        </button>
-      </div>
-    </div>
-  </section>
+          <tbody>
+            <tr>
+              <th>Dine-in</th>
+              <td>
+                Enjoy freshly prepared meals in a warm and comfortable setting
+                perfect for friends, families, and small gatherings.
+              </td>
+              <td>Daily</td>
+            </tr>
+            <tr>
+              <th>Delivery</th>
+              <td>
+                Order your favorite dishes and enjoy the same great taste at
+                home with our fast and reliable takeout and delivery service.
+              </td>
+              <td>Daily</td>
+            </tr>
+            <tr>
+              <th>Events & Catering</th>
+              <td>
+                We provide customized food packages for birthdays, meetings, and
+                special occasions, ensuring quality dishes and smooth service
+                for your event.
+              </td>
+              <td>By Request</td>
+            </tr>
+          </tbody>
 
-  <section class="main">
-    <h2 id="main">Main courses</h2>
-    <div class="main-course">
-      <div>
-        <img
-          src="images/main-course/grilled-chicken.jfif"
-          alt="grilled chicken"
-        />
-        <p>Grilled Chicken</p>
-        <p>₱199.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Grilled Chicken',
-                  'Juicy chicken breast marinated in herbs and grilled to perfection. Served with steamed vegetables.',
-                )
-              "
-        >
-          Description
-        </button>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                For event bookings, please contact us at least 3 days in
+                advance.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <div class="logo">
+        <img class="footer-logo" src="/images/logo.png" alt="logo" />
       </div>
-
-      <div>
-        <img src="images/main-course/baked-salmon.jfif" alt="baked salmon" />
-        <p>Baked Salmon</p>
-        <p>₱250.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Baked Salmon',
-                  'Oven-baked salmon fillet with lemon butter sauce. Rich in flavor and omega-3!',
-                )
-              "
-        >
-          Description
-        </button>
+      <div class="content">
+        <div class="left">
+          <h4>Contact Us</h4>
+          <p>
+            acscis_bistro@bup.org
+            <br />
+            +639930558942
+          </p>
+        </div>
+        <div class="right">
+          <h4>Address</h4>
+          <p>
+            Centro Occidental Polangui <br />
+            Albay, Philippines
+          </p>
+        </div>
       </div>
-
-      <div>
-        <img src="images/main-course/beef-steak.jfif" alt="beef steak" />
-        <p>Beef Steak</p>
-        <p>₱500.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Beef Steak',
-                  'Premium cut beef steak cooked to your liking. Served with mashed potato and gravy.',
-                )
-              "
-        >
-          Description
-        </button>
+      <div class="bottom">
+        <p>2026 &copy; ACSciS Bistro. All rights reserved.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Desserts -->
-  <section class="desserts">
-    <h2>Desserts</h2>
-    <div class="desserts-list">
-      <div>
-        <img src="images/desserts/Kuchen.jfif" alt="chocolate cake" />
-        <p>Chocolate Cake</p>
-        <p>₱180.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Chocolate Cake',
-                  'Moist layers of rich chocolate cake with creamy chocolate frosting. A classic favorite!',
-                )
-              "
-        >
-          Description
-        </button>
-      </div>
-
-      <div>
-        <img src="images/desserts/sundae.jfif" alt="icecream sundae" />
-        <p>Ice Cream Sundae</p>
-        <p>₱150.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Ice Cream Sundae',
-                  'Scoops of vanilla ice cream topped with chocolate syrup, whipped cream, and a cherry.',
-                )
-              "
-        >
-          Description
-        </button>
-      </div>
-
-      <div>
-        <img src="images/desserts/mango-float.jfif" alt="mango graham" />
-        <p>Mango Graham</p>
-        <p>₱150.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Mango Graham',
-                  'Layers of fresh mango, all-purpose cream, and graham crackers. A beloved Filipino dessert!',
-                )
-              "
-        >
-          Description
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Beverages -->
-  <section class="beverages">
-    <h2>Beverages</h2>
-    <div class="drinks">
-      <div>
-        <img src="images/beverages/iced-tea.jfif" alt="iced tea" />
-        <p>Iced Tea</p>
-        <p>₱100.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Iced Tea',
-                  'Refreshing cold-brewed tea served over ice. Available in classic and lemon flavors.',
-                )
-              "
-        >
-          Description
-        </button>
-      </div>
-
-      <div>
-        <img src="images/beverages/fresh-lemonade.jfif" alt="fresh lemonade" />
-        <p>Fresh Lemonade</p>
-        <p>₱100.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Fresh Lemonade',
-                  'Freshly squeezed lemon juice with a hint of sweetness. Perfect for a hot day!',
-                )
-              "
-        >
-          Description
-        </button>
-      </div>
-
-      <div>
-        <img src="images/beverages/brewed-coffee.jfif" alt="brewed coffee" />
-        <p>Brewed Coffee</p>
-        <p>₱100.00</p>
-        <button
-          class="info-btn"
-          onclick="
-                showInfo(
-                  'Brewed Coffee',
-                  'Freshly brewed hot coffee made from quality beans. Best enjoyed black or with milk.',
-                )
-              "
-        >
-          Description
-        </button>
-      </div>
-    </div>
-  </section>
-</main>
+    </footer>
+  </body>
+</html>

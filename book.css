@@ -1,0 +1,82 @@
+.book,
+.left,
+.book-content,
+.book-header,
+.input-group,
+form {
+    display: flex;
+}
+
+.book {
+    gap: 24px;
+    min-height: 100vh;
+    padding: 0 32px;
+}
+
+.left {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.left > img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.book-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+form {
+    width: 450px;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.book-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.book-header > h1 {
+    font-family: ui-sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.book-header > p {
+    color: #ffe5bc;
+}
+
+.input-group {
+    flex-direction: column;
+    gap: 4px;
+}
+
+input {
+    padding: 6px 12px;
+    font-size: 16px;
+    background: #fffde4;
+    border-radius: 4px;
+    outline: none;
+}
+
+.submit-btn {
+    padding: 12px;
+    font-size: 14px;
+    color: #ffe5bc;
+    background: none;
+    border: 2px solid #ffe5bc;
+    cursor: pointer;
+    margin-top: 12px;
+}

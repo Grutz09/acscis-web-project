@@ -4,15 +4,21 @@
   box-sizing: border-box;
 }
 
-header {
+body,
+header,
+.logo,
+ul,
+footer > .content {
   display: flex;
+}
+
+header {
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
 }
 
 body {
-  display: flex;
   flex-direction: column;
   font-family: "Gill Sans", sans-serif;
   background-color: #10100f;
@@ -26,7 +32,6 @@ main {
 }
 
 .logo {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -40,7 +45,6 @@ main {
 }
 
 ul {
-  display: flex;
   list-style: none;
   gap: 2rem;
 }
@@ -79,7 +83,6 @@ footer {
 }
 
 footer > .content {
-  display: flex;
   justify-content: space-evenly;
   text-align: center;
   margin-top: 24px;

@@ -6,7 +6,7 @@
     <title>ACSciS Bistro</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="book.css" />
   </head>
   <body>
     <header>
@@ -26,39 +26,42 @@
       </a>
     </header>
 
-    <main class="about">
-      <div class="about-header">
-        <img class="logo-about" src="/images/logo.png" alt="logo" />
-        <h1>
-          Refined Taste, Exceptional Feel <br />
-          Where Elegance Meet Flavor
-        </h1>
+    <main class="book">
+      <div class="left">
+        <img src="images/table-bg.jpg" alt="ACSciS Background" />
       </div>
-      <div class="about-content">
-        <p class="title">Opening Hours</p>
-        <p class="open-hrs">MON - THU (8:00 AM - 9:00 PM)</p>
-        <p class="open-hrs">FRI - SUN (10:00 AM - 7:00 PM)</p>
-        <a href="book.html" class="book-btn">
-          <button>BOOK YOUR TABLE</button>
-        </a>
-      </div>
-      <div class="banner">
-        <div class="banner-item">
-          <h1>5K</h1>
-          <p>Dishes Served Monthly</p>
+      <div class="book-content">
+        <div class="book-header">
+          <p>BOOK A TABLE</p>
+          <h1>Make A Reservation</h1>
         </div>
-        <div class="banner-item">
-          <h1>20+</h1>
-          <p>Unique Recipes Curated</p>
-        </div>
-        <div class="banner-item">
-          <h1>80%</h1>
-          <p>Repeat Customers</p>
-        </div>
-        <div class="banner-item">
-          <h1>100+</h1>
-          <p>Occasions Celebrated</p>
-        </div>
+        <form>
+          <div class="input-group">
+            <label for="name">Full Name*</label>
+            <input type="text" />
+          </div>
+          <div class="input-group">
+            <label for="">Email Address*</label>
+            <input type="email" />
+          </div>
+          <div class="input-group">
+            <label for="">Phone*</label>
+            <input type="phone" />
+          </div>
+          <div class="input-group">
+            <label for="">Date*</label>
+            <input type="date" />
+          </div>
+          <div class="input-group">
+            <label for="">Time*</label>
+            <input type="time" />
+          </div>
+          <div class="input-group">
+            <label for="">Persons*</label>
+            <input type="number" />
+          </div>
+          <button class="submit-btn">BOOK YOUR TABLE</button>
+        </form>
       </div>
     </main>
     <footer>
