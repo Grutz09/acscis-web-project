@@ -1,5 +1,5 @@
 .book,
-.left,
+.left-image,
 .book-content,
 .book-header,
 .input-group,
@@ -13,13 +13,13 @@ form {
     padding: 0 32px;
 }
 
-.left {
+.left-image {
     justify-content: center;
     align-items: center;
     flex: 1;
 }
 
-.left > img {
+.left-image > img {
     width: 500px;
     height: 600px;
     object-fit: cover;

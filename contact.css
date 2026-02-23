@@ -28,6 +28,12 @@
     width: 350px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
 .input-group {
     display: flex;
     flex-direction: column;

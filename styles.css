@@ -93,14 +93,12 @@ img.footer-logo {
   height: 125px;
 }
 
-.left > h4,
-.right > h4 {
+.content > div > h4 {
   font-family: ui-sans-serif;
   color: #ffe5bc;
 }
 
-.left > p,
-.right > p {
+.content > div > p {
   margin-top: 12px;
 }
 
